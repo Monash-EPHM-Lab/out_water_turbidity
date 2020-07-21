@@ -88,10 +88,10 @@ GND
 Text GLabel 3950 1500 0    50   Input ~ 0
 VCC
 $Comp
-L Transistor_BJT:BC557 Q?
+L Transistor_BJT:BC557 Q2
 U 1 1 5F1688A6
 P 4450 1600
-F 0 "Q?" V 4450 1400 50  0000 C CNN
+F 0 "Q2" V 4450 1400 50  0000 C CNN
 F 1 "BC557" V 4350 1350 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4650 1525 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/BC/BC557.pdf" H 4450 1600 50  0001 L CNN
@@ -99,10 +99,10 @@ F 3 "http://www.fairchildsemi.com/ds/BC/BC557.pdf" H 4450 1600 50  0001 L CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Transistor_BJT:BC557 Q?
+L Transistor_BJT:BC557 Q1
 U 1 1 5F16910C
 P 4450 1250
-F 0 "Q?" V 4350 1050 50  0000 L CNN
+F 0 "Q1" V 4350 1050 50  0000 L CNN
 F 1 "BC557" V 4250 900 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4650 1175 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/BC/BC557.pdf" H 4450 1250 50  0001 L CNN
@@ -128,10 +128,10 @@ Wire Wire Line
 	4100 1500 3950 1500
 Connection ~ 4100 1500
 $Comp
-L Device:R R?
+L Device:R R2
 U 1 1 5F173B21
 P 4300 1850
-F 0 "R?" V 4093 1850 50  0000 C CNN
+F 0 "R2" V 4093 1850 50  0000 C CNN
 F 1 "200 Ω" V 4184 1850 50  0000 C CNN
 F 2 "" V 4230 1850 50  0001 C CNN
 F 3 "~" H 4300 1850 50  0001 C CNN
@@ -139,10 +139,10 @@ F 3 "~" H 4300 1850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R1
 U 1 1 5F1741D2
 P 4300 1000
-F 0 "R?" V 4093 1000 50  0000 C CNN
+F 0 "R1" V 4093 1000 50  0000 C CNN
 F 1 "200 Ω" V 4184 1000 50  0000 C CNN
 F 2 "" V 4230 1000 50  0001 C CNN
 F 3 "~" H 4300 1000 50  0001 C CNN

@@ -64,10 +64,10 @@ uint8_t read_fifo_burst(ArduCAM myCAM);
 void wakeUp(){}
 
 void setup() {
-   pinMode(4, INPUT);
-	attachInterrupt(digitalPinToInterrupt(4), wakeUp, LOW); 
+    
   // put your setup code here, to run once:
-  
+  pinMode(4, INPUT);
+  attachInterrupt(digitalPinToInterrupt(4), wakeUp, HIGH);
 
 
   Wire.begin();
@@ -239,7 +239,7 @@ void loop() {
    
    sendimg();
    
-  capture();
+   capture();
   
   
 }

@@ -189,7 +189,7 @@ void setup() {
 
    
 	pinMode(TURB_WKE, OUTPUT);
-	digitalWrite(TURB_WKE, HIGH);
+	digitalWrite(TURB_WKE, LOW);
    
   //clear buffers
   charBuffclr();
@@ -257,9 +257,10 @@ void turbread(){
 	turbPort.begin(9600);
 	turbPort.listen();
 
-	digitalWrite(TURB_WKE, LOW);
-	delay(10);
+	pinMode(TURB_WKE, OUTPUT);
 	digitalWrite(TURB_WKE, HIGH);
+	delay(300);
+	digitalWrite(TURB_WKE, LOW);
 
 
 	
@@ -290,6 +291,8 @@ void turbread(){
 	turbPort.flush();
 	turbPort.end();
 	simCom.listen();
+	
+	
 }
 
 
